@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C965FAD11A1E4EF0009AA35A /* ImprovTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C965FAD01A1E4EF0009AA35A /* ImprovTabBarController.m */; };
+		C965FAD41A1E5ECD009AA35A /* SuggestionatorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C965FAD31A1E5ECD009AA35A /* SuggestionatorHelper.m */; };
+		C965FAD61A1E7C54009AA35A /* suggestionator.json in Resources */ = {isa = PBXBuildFile; fileRef = C965FAD51A1E7C54009AA35A /* suggestionator.json */; };
+		C965FAE31A1ED741009AA35A /* airhorn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C965FAD71A1ED741009AA35A /* airhorn.mp3 */; };
+		C965FAE41A1ED741009AA35A /* beat1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C965FAD81A1ED741009AA35A /* beat1.mp3 */; };
+		C965FAE51A1ED741009AA35A /* beat2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C965FAD91A1ED741009AA35A /* beat2.mp3 */; };
+		C965FAE61A1ED741009AA35A /* beat3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C965FADA1A1ED741009AA35A /* beat3.mp3 */; };
+		C965FAE71A1ED741009AA35A /* buzzer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C965FADB1A1ED741009AA35A /* buzzer.mp3 */; };
+		C965FAE81A1ED741009AA35A /* countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C965FADC1A1ED741009AA35A /* countdown.mp3 */; };
+		C965FAE91A1ED741009AA35A /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C965FADD1A1ED741009AA35A /* ding.mp3 */; };
+		C965FAEA1A1ED741009AA35A /* doorbell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C965FADE1A1ED741009AA35A /* doorbell.mp3 */; };
+		C965FAEB1A1ED741009AA35A /* knock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C965FADF1A1ED741009AA35A /* knock.mp3 */; };
+		C965FAEC1A1ED741009AA35A /* phone1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C965FAE01A1ED741009AA35A /* phone1.mp3 */; };
+		C965FAED1A1ED741009AA35A /* phone2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C965FAE11A1ED741009AA35A /* phone2.mp3 */; };
+		C965FAEE1A1ED741009AA35A /* yay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C965FAE21A1ED741009AA35A /* yay.mp3 */; };
+		C965FAF01A1EDE49009AA35A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C965FAEF1A1EDE49009AA35A /* AVFoundation.framework */; };
+		C9AD19871A21191000423EFB /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AD19861A21191000423EFB /* iAd.framework */; };
+		C9C6AE6A1A1DB70C00C26D56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C6AE691A1DB70C00C26D56 /* main.m */; };
+		C9C6AE6D1A1DB70D00C26D56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C6AE6C1A1DB70D00C26D56 /* AppDelegate.m */; };
+		C9C6AE761A1DB70D00C26D56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C6AE741A1DB70D00C26D56 /* Main.storyboard */; };
+		C9C6AE781A1DB70D00C26D56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C6AE771A1DB70D00C26D56 /* Images.xcassets */; };
+		C9C6AE7B1A1DB70D00C26D56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C6AE791A1DB70D00C26D56 /* LaunchScreen.xib */; };
+		C9C6AE871A1DB70E00C26D56 /* Improv_ToolboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C6AE861A1DB70E00C26D56 /* Improv_ToolboxTests.m */; };
+		C9C6AE921A1DBBA500C26D56 /* SuggestionatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C6AE911A1DBBA500C26D56 /* SuggestionatorViewController.m */; };
+		C9C6AE9B1A1DBBD900C26D56 /* HalfLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C6AE9A1A1DBBD900C26D56 /* HalfLifeViewController.m */; };
+		C9C6AE9E1A1DBC1B00C26D56 /* TwitterWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C6AE9D1A1DBC1B00C26D56 /* TwitterWebViewController.m */; };
+		C9C6AEA41A1DC7AA00C26D56 /* SoundboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C6AEA31A1DC7AA00C26D56 /* SoundboardViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9C6AE811A1DB70D00C26D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C6AE5C1A1DB70C00C26D56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C6AE631A1DB70C00C26D56;
+			remoteInfo = "Improv Toolbox";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C965FACF1A1E4EF0009AA35A /* ImprovTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImprovTabBarController.h; sourceTree = "<group>"; };
+		C965FAD01A1E4EF0009AA35A /* ImprovTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImprovTabBarController.m; sourceTree = "<group>"; };
+		C965FAD21A1E5ECD009AA35A /* SuggestionatorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionatorHelper.h; sourceTree = "<group>"; };
+		C965FAD31A1E5ECD009AA35A /* SuggestionatorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionatorHelper.m; sourceTree = "<group>"; };
+		C965FAD51A1E7C54009AA35A /* suggestionator.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = suggestionator.json; sourceTree = "<group>"; };
+		C965FAD71A1ED741009AA35A /* airhorn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = airhorn.mp3; sourceTree = "<group>"; };
+		C965FAD81A1ED741009AA35A /* beat1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat1.mp3; sourceTree = "<group>"; };
+		C965FAD91A1ED741009AA35A /* beat2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat2.mp3; sourceTree = "<group>"; };
+		C965FADA1A1ED741009AA35A /* beat3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beat3.mp3; sourceTree = "<group>"; };
+		C965FADB1A1ED741009AA35A /* buzzer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buzzer.mp3; sourceTree = "<group>"; };
+		C965FADC1A1ED741009AA35A /* countdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = countdown.mp3; sourceTree = "<group>"; };
+		C965FADD1A1ED741009AA35A /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
+		C965FADE1A1ED741009AA35A /* doorbell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = doorbell.mp3; sourceTree = "<group>"; };
+		C965FADF1A1ED741009AA35A /* knock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = knock.mp3; sourceTree = "<group>"; };
+		C965FAE01A1ED741009AA35A /* phone1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = phone1.mp3; sourceTree = "<group>"; };
+		C965FAE11A1ED741009AA35A /* phone2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = phone2.mp3; sourceTree = "<group>"; };
+		C965FAE21A1ED741009AA35A /* yay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yay.mp3; sourceTree = "<group>"; };
+		C965FAEF1A1EDE49009AA35A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C9AD19861A21191000423EFB /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		C9C6AE641A1DB70C00C26D56 /* Improv Toolbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Improv Toolbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C6AE681A1DB70C00C26D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C6AE691A1DB70C00C26D56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9C6AE6B1A1DB70D00C26D56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C9C6AE6C1A1DB70D00C26D56 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C9C6AE751A1DB70D00C26D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9C6AE771A1DB70D00C26D56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C9C6AE7A1A1DB70D00C26D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C9C6AE801A1DB70D00C26D56 /* Improv ToolboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Improv ToolboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C6AE851A1DB70E00C26D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C6AE861A1DB70E00C26D56 /* Improv_ToolboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Improv_ToolboxTests.m; sourceTree = "<group>"; };
+		C9C6AE901A1DBBA500C26D56 /* SuggestionatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionatorViewController.h; sourceTree = "<group>"; };
+		C9C6AE911A1DBBA500C26D56 /* SuggestionatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionatorViewController.m; sourceTree = "<group>"; };
+		C9C6AE991A1DBBD900C26D56 /* HalfLifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HalfLifeViewController.h; sourceTree = "<group>"; };
+		C9C6AE9A1A1DBBD900C26D56 /* HalfLifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HalfLifeViewController.m; sourceTree = "<group>"; };
+		C9C6AE9C1A1DBC1B00C26D56 /* TwitterWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterWebViewController.h; sourceTree = "<group>"; };
+		C9C6AE9D1A1DBC1B00C26D56 /* TwitterWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterWebViewController.m; sourceTree = "<group>"; };
+		C9C6AEA21A1DC7AA00C26D56 /* SoundboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundboardViewController.h; sourceTree = "<group>"; };
+		C9C6AEA31A1DC7AA00C26D56 /* SoundboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundboardViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9C6AE611A1DB70C00C26D56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9AD19871A21191000423EFB /* iAd.framework in Frameworks */,
+				C965FAF01A1EDE49009AA35A /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C6AE7D1A1DB70D00C26D56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9C6AE5B1A1DB70C00C26D56 = {
+			isa = PBXGroup;
+			children = (
+				C9AD19861A21191000423EFB /* iAd.framework */,
+				C965FAEF1A1EDE49009AA35A /* AVFoundation.framework */,
+				C9C6AE661A1DB70C00C26D56 /* Improv Toolbox */,
+				C9C6AE831A1DB70D00C26D56 /* Improv ToolboxTests */,
+				C9C6AE651A1DB70C00C26D56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9C6AE651A1DB70C00C26D56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6AE641A1DB70C00C26D56 /* Improv Toolbox.app */,
+				C9C6AE801A1DB70D00C26D56 /* Improv ToolboxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9C6AE661A1DB70C00C26D56 /* Improv Toolbox */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6AE6B1A1DB70D00C26D56 /* AppDelegate.h */,
+				C9C6AE6C1A1DB70D00C26D56 /* AppDelegate.m */,
+				C9C6AE741A1DB70D00C26D56 /* Main.storyboard */,
+				C9C6AE771A1DB70D00C26D56 /* Images.xcassets */,
+				C9C6AE791A1DB70D00C26D56 /* LaunchScreen.xib */,
+				C9C6AE671A1DB70C00C26D56 /* Supporting Files */,
+				C9C6AE901A1DBBA500C26D56 /* SuggestionatorViewController.h */,
+				C9C6AE911A1DBBA500C26D56 /* SuggestionatorViewController.m */,
+				C9C6AE991A1DBBD900C26D56 /* HalfLifeViewController.h */,
+				C9C6AE9A1A1DBBD900C26D56 /* HalfLifeViewController.m */,
+				C9C6AE9C1A1DBC1B00C26D56 /* TwitterWebViewController.h */,
+				C9C6AE9D1A1DBC1B00C26D56 /* TwitterWebViewController.m */,
+				C9C6AEA21A1DC7AA00C26D56 /* SoundboardViewController.h */,
+				C9C6AEA31A1DC7AA00C26D56 /* SoundboardViewController.m */,
+				C965FACF1A1E4EF0009AA35A /* ImprovTabBarController.h */,
+				C965FAD01A1E4EF0009AA35A /* ImprovTabBarController.m */,
+				C965FAD21A1E5ECD009AA35A /* SuggestionatorHelper.h */,
+				C965FAD31A1E5ECD009AA35A /* SuggestionatorHelper.m */,
+			);
+			path = "Improv Toolbox";
+			sourceTree = "<group>";
+		};
+		C9C6AE671A1DB70C00C26D56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C965FAD71A1ED741009AA35A /* airhorn.mp3 */,
+				C965FAD81A1ED741009AA35A /* beat1.mp3 */,
+				C965FAD91A1ED741009AA35A /* beat2.mp3 */,
+				C965FADA1A1ED741009AA35A /* beat3.mp3 */,
+				C965FADB1A1ED741009AA35A /* buzzer.mp3 */,
+				C965FADC1A1ED741009AA35A /* countdown.mp3 */,
+				C965FADD1A1ED741009AA35A /* ding.mp3 */,
+				C965FADE1A1ED741009AA35A /* doorbell.mp3 */,
+				C965FADF1A1ED741009AA35A /* knock.mp3 */,
+				C965FAE01A1ED741009AA35A /* phone1.mp3 */,
+				C965FAE11A1ED741009AA35A /* phone2.mp3 */,
+				C965FAE21A1ED741009AA35A /* yay.mp3 */,
+				C965FAD51A1E7C54009AA35A /* suggestionator.json */,
+				C9C6AE681A1DB70C00C26D56 /* Info.plist */,
+				C9C6AE691A1DB70C00C26D56 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9C6AE831A1DB70D00C26D56 /* Improv ToolboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6AE861A1DB70E00C26D56 /* Improv_ToolboxTests.m */,
+				C9C6AE841A1DB70E00C26D56 /* Supporting Files */,
+			);
+			path = "Improv ToolboxTests";
+			sourceTree = "<group>";
+		};
+		C9C6AE841A1DB70E00C26D56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6AE851A1DB70E00C26D56 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9C6AE631A1DB70C00C26D56 /* Improv Toolbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C6AE8A1A1DB70E00C26D56 /* Build configuration list for PBXNativeTarget "Improv Toolbox" */;
+			buildPhases = (
+				C9C6AE601A1DB70C00C26D56 /* Sources */,
+				C9C6AE611A1DB70C00C26D56 /* Frameworks */,
+				C9C6AE621A1DB70C00C26D56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Improv Toolbox";
+			productName = "Improv Toolbox";
+			productReference = C9C6AE641A1DB70C00C26D56 /* Improv Toolbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9C6AE7F1A1DB70D00C26D56 /* Improv ToolboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C6AE8D1A1DB70E00C26D56 /* Build configuration list for PBXNativeTarget "Improv ToolboxTests" */;
+			buildPhases = (
+				C9C6AE7C1A1DB70D00C26D56 /* Sources */,
+				C9C6AE7D1A1DB70D00C26D56 /* Frameworks */,
+				C9C6AE7E1A1DB70D00C26D56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9C6AE821A1DB70D00C26D56 /* PBXTargetDependency */,
+			);
+			name = "Improv ToolboxTests";
+			productName = "Improv ToolboxTests";
+			productReference = C9C6AE801A1DB70D00C26D56 /* Improv ToolboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9C6AE5C1A1DB70C00C26D56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Gainesville Improv Festival";
+				TargetAttributes = {
+					C9C6AE631A1DB70C00C26D56 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = JFHJLE7UR4;
+					};
+					C9C6AE7F1A1DB70D00C26D56 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = C9C6AE631A1DB70C00C26D56;
+					};
+				};
+			};
+			buildConfigurationList = C9C6AE5F1A1DB70C00C26D56 /* Build configuration list for PBXProject "Improv Toolbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9C6AE5B1A1DB70C00C26D56;
+			productRefGroup = C9C6AE651A1DB70C00C26D56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9C6AE631A1DB70C00C26D56 /* Improv Toolbox */,
+				C9C6AE7F1A1DB70D00C26D56 /* Improv ToolboxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9C6AE621A1DB70C00C26D56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C965FAE41A1ED741009AA35A /* beat1.mp3 in Resources */,
+				C965FAE31A1ED741009AA35A /* airhorn.mp3 in Resources */,
+				C965FAE71A1ED741009AA35A /* buzzer.mp3 in Resources */,
+				C9C6AE761A1DB70D00C26D56 /* Main.storyboard in Resources */,
+				C965FAD61A1E7C54009AA35A /* suggestionator.json in Resources */,
+				C965FAEA1A1ED741009AA35A /* doorbell.mp3 in Resources */,
+				C9C6AE7B1A1DB70D00C26D56 /* LaunchScreen.xib in Resources */,
+				C965FAEC1A1ED741009AA35A /* phone1.mp3 in Resources */,
+				C965FAEE1A1ED741009AA35A /* yay.mp3 in Resources */,
+				C965FAE91A1ED741009AA35A /* ding.mp3 in Resources */,
+				C9C6AE781A1DB70D00C26D56 /* Images.xcassets in Resources */,
+				C965FAED1A1ED741009AA35A /* phone2.mp3 in Resources */,
+				C965FAE61A1ED741009AA35A /* beat3.mp3 in Resources */,
+				C965FAEB1A1ED741009AA35A /* knock.mp3 in Resources */,
+				C965FAE81A1ED741009AA35A /* countdown.mp3 in Resources */,
+				C965FAE51A1ED741009AA35A /* beat2.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C6AE7E1A1DB70D00C26D56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9C6AE601A1DB70C00C26D56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C6AE9E1A1DBC1B00C26D56 /* TwitterWebViewController.m in Sources */,
+				C9C6AEA41A1DC7AA00C26D56 /* SoundboardViewController.m in Sources */,
+				C9C6AE921A1DBBA500C26D56 /* SuggestionatorViewController.m in Sources */,
+				C9C6AE6D1A1DB70D00C26D56 /* AppDelegate.m in Sources */,
+				C9C6AE9B1A1DBBD900C26D56 /* HalfLifeViewController.m in Sources */,
+				C9C6AE6A1A1DB70C00C26D56 /* main.m in Sources */,
+				C965FAD11A1E4EF0009AA35A /* ImprovTabBarController.m in Sources */,
+				C965FAD41A1E5ECD009AA35A /* SuggestionatorHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C6AE7C1A1DB70D00C26D56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C6AE871A1DB70E00C26D56 /* Improv_ToolboxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9C6AE821A1DB70D00C26D56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C6AE631A1DB70C00C26D56 /* Improv Toolbox */;
+			targetProxy = C9C6AE811A1DB70D00C26D56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9C6AE741A1DB70D00C26D56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C6AE751A1DB70D00C26D56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9C6AE791A1DB70D00C26D56 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C6AE7A1A1DB70D00C26D56 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9C6AE881A1DB70E00C26D56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C9C6AE891A1DB70E00C26D56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9C6AE8B1A1DB70E00C26D56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Improv Toolbox/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		C9C6AE8C1A1DB70E00C26D56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Improv Toolbox/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		C9C6AE8E1A1DB70E00C26D56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Improv ToolboxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Improv Toolbox.app/Improv Toolbox";
+			};
+			name = Debug;
+		};
+		C9C6AE8F1A1DB70E00C26D56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Improv ToolboxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Improv Toolbox.app/Improv Toolbox";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9C6AE5F1A1DB70C00C26D56 /* Build configuration list for PBXProject "Improv Toolbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C6AE881A1DB70E00C26D56 /* Debug */,
+				C9C6AE891A1DB70E00C26D56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C6AE8A1A1DB70E00C26D56 /* Build configuration list for PBXNativeTarget "Improv Toolbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C6AE8B1A1DB70E00C26D56 /* Debug */,
+				C9C6AE8C1A1DB70E00C26D56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C6AE8D1A1DB70E00C26D56 /* Build configuration list for PBXNativeTarget "Improv ToolboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C6AE8E1A1DB70E00C26D56 /* Debug */,
+				C9C6AE8F1A1DB70E00C26D56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9C6AE5C1A1DB70C00C26D56 /* Project object */;
+}
